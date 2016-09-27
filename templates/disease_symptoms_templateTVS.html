@@ -1,0 +1,5 @@
+<!-- Edit this file to change the layout of the highlighted record in the table view -->
+		<td id="disease_symptoms-disease-<%%VALUE(id)%%>" class=""><%%VALUE(disease)%%></td>
+		<td id="disease_symptoms-symptoms-<%%VALUE(id)%%>" class=""><%%VALUE(symptoms)%%></td>
+		<td id="disease_symptoms-reference-<%%VALUE(id)%%>" class="text-right"><a href="link.php?t=disease_symptoms&f=reference&i=<%%VALUE(id)%%>" target="_blank" class="text-right" style="padding: 0;"><%%VALUE(reference)%%></a></td>
+		<script>jQuery(function(){ var e_reference = '<%%VALUE(reference)%%>'; if(e_reference == '' || e_reference == '&nbsp;') jQuery('#disease_symptoms-reference-<%%VALUE(id)%%>').html(''); });</script>

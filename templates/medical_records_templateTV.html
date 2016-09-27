@@ -1,0 +1,10 @@
+<!-- Edit this file to change the layout of each record in the table view -->
+<!-- To disable clicking of a field, remove the <%%select%%> and <%%endselect%%> formatters around it-->
+
+<!-- If you wish to hide the table view header that contains the column titles, -->
+<!-- open the generated 'medical_records_view.php' file in your text editor and -->
+<!-- change the value of $x->ShowTableHeader to 0 -->
+
+		<td id="medical_records-patient-<%%VALUE(id)%%>" class="medical_records-patient "><%%SELECT%%><%%VALUE(patient)%%><%%ENDSELECT%%></td>
+		<td id="medical_records-document-<%%VALUE(id)%%>" class="medical_records-document "><%%SELECT%%><img src="thumbnail.php?i=<%%VALUE(document)%%>&t=medical_records&f=document&v=tv" class="img-thumbnail"><%%ENDSELECT%%></td>
+		<td id="medical_records-description-<%%VALUE(id)%%>" class="medical_records-description "><%%SELECT%%><%%VALUE(description)%%><%%ENDSELECT%%></td>
